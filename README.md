@@ -1,3 +1,3 @@
 # cactpot-solver
 
-A solver for the Mini Cactpot
+A solver for Final Fantasy XIV's Mini Cactpot
