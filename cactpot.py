@@ -3,3 +3,6 @@ def parse_board():
 
 def solve():
     return
+
+def main():
+    return
