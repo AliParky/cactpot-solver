@@ -5,4 +5,5 @@ def solve():
     return
 
 def main():
+    board = parse_board()
     return
