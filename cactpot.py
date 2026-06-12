@@ -1,4 +1,5 @@
 def parse_board():
+    raw = input()
     return
 
 def solve():
