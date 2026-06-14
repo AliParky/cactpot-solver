@@ -8,4 +8,3 @@ def solve():
 def main():
     board = parse_board()
     print(solve(board))
-    return
