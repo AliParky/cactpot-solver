@@ -1,5 +1,6 @@
 def parse_board():
     raw = input()
+    parts = raw.split()
     return
 
 def solve():
