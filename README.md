@@ -4,4 +4,4 @@ A Python-based solver for Final Fantasy XIV's Mini Cactpot mini-game that helps 
 
 ## What is Mini Cactpot?
 
-Mini Cactpot is a mini-game in Final Fantasy XIV
+Mini Cactpot is a scratch-off ticket mini-game in Final Fantasy XIV
