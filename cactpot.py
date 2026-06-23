@@ -5,6 +5,8 @@ def parse_board():
     if len(parts) != 9:
         print("Invalid input")
         return
+    
+    board = []
     return
 
 def solve():
