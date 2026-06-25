@@ -7,6 +7,8 @@ def parse_board():
         return
     
     board = []
+    for i in parts:
+        board.append(i)
     return
 
 def solve():
