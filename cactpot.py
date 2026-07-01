@@ -10,7 +10,8 @@ def parse_board():
     for i in parts:
         if not i.isdigit():
             return
-        board.append(int(i))
+        value = int(i)
+        board.append(value)
     return
 
 def solve():
