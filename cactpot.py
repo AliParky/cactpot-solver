@@ -11,6 +11,8 @@ def parse_board():
         if not i.isdigit():
             return
         value = int(i)
+        if value < 1 or value > 9:
+            return
         board.append(value)
     return
 
