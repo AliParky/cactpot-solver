@@ -8,6 +8,8 @@ def parse_board():
     
     board = []
     for i in parts:
+        if i == ".":
+            board.append(None)
         if not i.isdigit():
             return
         value = int(i)
