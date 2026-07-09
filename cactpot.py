@@ -10,6 +10,7 @@ def parse_board():
     for i in parts:
         if i == ".":
             board.append(None)
+            continue
         if not i.isdigit():
             return
         value = int(i)
