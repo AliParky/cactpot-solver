@@ -15,6 +15,7 @@ def parse_board():
             return
         value = int(i)
         if value < 1 or value > 9:
+            print("Out of range")
             return
         board.append(value)
     return
