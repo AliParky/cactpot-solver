@@ -12,6 +12,7 @@ def parse_board():
             board.append(None)
             continue
         if not i.isdigit():
+            print("Invalid input")
             return
         value = int(i)
         if value < 1 or value > 9:
