@@ -19,7 +19,7 @@ def parse_board():
             print("Out of range")
             return
         board.append(value)
-    return
+    return board
 
 def solve():
     return
