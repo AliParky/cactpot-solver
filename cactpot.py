@@ -3,7 +3,7 @@ def parse_board():
     parts = raw.split()
 
     if len(parts) != 9:
-        print("Invalid input")
+        print("Expected exactly 9 values")
         return
     
     board = []
