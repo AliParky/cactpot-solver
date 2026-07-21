@@ -8,6 +8,7 @@ Mini Cactpot is a scratch-off ticket mini-game available in the Gold Saucer in F
 
 ### Payout Table
 
+Payout
 10000
 36
 720
