@@ -30,3 +30,5 @@ Sum Payout
 24 3600
 
 ## Requirements
+
+- Python
