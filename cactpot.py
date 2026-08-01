@@ -1,5 +1,5 @@
 def parse_board():
-    raw = input("Enter 9 cells (use . for unknown) e.g. '1 . . 4 . . . . .':")
+    raw = input("Enter 9 cells (use . for unknown), e.g. '1 . . 4 . . . . .':")
     parts = raw.split()
 
     if len(parts) != 9:
