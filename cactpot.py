@@ -21,7 +21,7 @@ def parse_board():
         board.append(value)
     return board
 
-def solve():
+def solve(board):
     return
 
 def main():
