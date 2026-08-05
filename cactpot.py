@@ -22,6 +22,7 @@ def parse_board():
     return board
 
 def solve(board):
+    known_count = 0
     return
 
 def main():
