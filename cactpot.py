@@ -24,7 +24,8 @@ def parse_board():
 def solve(board):
     known_count = 0
     for i in board:
-        known_count += 1
+        if i is not None:
+            known_count += 1
     return
 
 def main():
