@@ -23,7 +23,7 @@ def parse_board():
 
 def solve(board):
     if len(board) != 9:
-        return
+        return "Cannot solve"
 
     known_count = 0
     for i in board:
