@@ -29,6 +29,10 @@ def solve(board):
     for i in board:
         if i is not None:
             known_count += 1
+
+    for i in enumerate(board):
+        print(i)
+    
     return
 
 def main():
