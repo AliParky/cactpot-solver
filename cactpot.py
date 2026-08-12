@@ -30,7 +30,7 @@ def solve(board):
         if i is not None:
             known_count += 1
 
-    for i in enumerate(board):
+    for i, j in enumerate(board):
         print(i)
     
     return
