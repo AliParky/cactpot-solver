@@ -31,7 +31,7 @@ def solve(board):
             known_count += 1
 
     for i, j in enumerate(board):
-        print(i)
+        print(i, j)
     
     return
 
