@@ -33,7 +33,7 @@ def solve(board):
     for i, j in enumerate(board):
         print(i, j)
         if j is None:
-            return
+            return i
     
     return
 
