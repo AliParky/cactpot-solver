@@ -35,7 +35,7 @@ def solve(board):
         row = i // 3 + 1
         col = i % 3 + 1
         if j is None:
-            return i
+            return f"{row}, {col}"
     
     return
 
