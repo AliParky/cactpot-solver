@@ -30,13 +30,14 @@ def solve(board):
         if i is not None:
             known_count += 1
 
-    for i, j in enumerate(board):
-        print(i, j)
-        row = i // 3 + 1
-        col = i % 3 + 1
-        if j is None:
-            return f"{row}, {col}"
-    
+    if known_count < 4:
+        for i, j in enumerate(board):
+            print(i, j)
+            row = i // 3 + 1
+            col = i % 3 + 1
+            if j is None:
+                return f"{row}, {col}"
+        
     return
 
 def main():
