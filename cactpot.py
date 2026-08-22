@@ -39,6 +39,9 @@ def solve(board):
             col = i % 3 + 1
             if j is None:
                 return f"Reveal next: {row}, {col}"
+
+    if known_count == 4:
+        return
         
     return
 
