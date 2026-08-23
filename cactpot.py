@@ -41,7 +41,7 @@ def solve(board):
                 return f"Reveal next: {row}, {col}"
 
     if known_count == 4:
-        return
+        return "Choose a line to scratch"
         
     return
 
