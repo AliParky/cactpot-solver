@@ -38,7 +38,7 @@ def solve(board):
             row = i // 3 + 1
             col = i % 3 + 1
             if j is None:
-                return f"Reveal next: {row}, {col}"
+                return f"Reveal next: r{row}, c{col}"
 
     if known_count == 4:
         return "Choose a line to scratch"
