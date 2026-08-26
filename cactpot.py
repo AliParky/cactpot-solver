@@ -44,6 +44,9 @@ def parse_board():
     return board
 
 def solve(board):
+    if board is None:
+        return
+
     if len(board) != 9:
         return "Cannot solve: Board must have 9 cells"
 
