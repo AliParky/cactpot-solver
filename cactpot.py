@@ -64,6 +64,7 @@ def solve(board):
                 return f"Reveal next: r{row}, c{col}"
 
     if known_count == 4:
+        best_line = None
         return "Choose a line to scratch"
         
     return
