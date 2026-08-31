@@ -20,7 +20,16 @@ payout_by_sum = {
     24: 3600
 }
 
-LINES = []
+LINES = [
+    (0, 1, 2),
+    (3, 4, 5),
+    (6, 7, 8),
+    (0, 3, 6),
+    (1, 4, 7),
+    (2, 5, 8),
+    (0, 4, 8),
+    (2, 4, 6)
+]
 
 def parse_board():
     raw = input("Enter 9 cells (use . for unknown), e.g. '1 . . 4 . . . . .':")
