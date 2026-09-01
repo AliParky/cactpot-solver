@@ -76,6 +76,8 @@ def solve(board):
 
     if known_count == 4:
         best_line = None
+        for line in LINES:
+            values = [board[i] for i in line]
         return "Choose a line to scratch"
         
     return
