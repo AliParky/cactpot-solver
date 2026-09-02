@@ -54,6 +54,9 @@ def parse_board():
         board.append(value)
     return board
 
+def line_expected_value():
+    return
+
 def solve(board):
     if board is None:
         return "Cannot solve"
