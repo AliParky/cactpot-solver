@@ -80,7 +80,7 @@ def solve(board):
     if known_count == 4:
         best_line = None
         best_payout = 0
-        for line in LINES:
+        for idx, line in enumerate(LINES):
             values = [board[i] for i in line]
         return "Choose a line to scratch"
         
