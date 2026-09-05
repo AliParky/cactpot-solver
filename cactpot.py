@@ -82,6 +82,7 @@ def solve(board):
         best_payout = 0
         for idx, line in enumerate(LINES):
             values = [board[i] for i in line]
+            payout = payout_by_sum.get(sum(values), 0)
         return "Choose a line to scratch"
         
     return
