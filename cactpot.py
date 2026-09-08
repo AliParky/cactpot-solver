@@ -82,6 +82,8 @@ def solve(board):
         best_payout = 0
         for idx, line in enumerate(LINES):
             values = [board[i] for i in line]
+            if None in values:
+                continue
             payout = payout_by_sum.get(sum(values), 0)
             if payout > best_payout:
                 best_line = idx
