@@ -88,7 +88,7 @@ def solve(board):
             if payout > best_payout:
                 best_line = idx
                 best_payout = payout
-        return "Choose a line to scratch"
+        return best_line
         
     return
 
