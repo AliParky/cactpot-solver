@@ -79,7 +79,7 @@ def solve(board):
 
     if known_count == 4:
         best_line = None
-        best_payout = 0
+        best_payout = -1
         for idx, line in enumerate(LINES):
             values = [board[i] for i in line]
             if None in values:
