@@ -88,6 +88,8 @@ def solve(board):
             if payout > best_payout:
                 best_line = idx
                 best_payout = payout
+        if best_line is None:
+            return
         return best_line
         
     return
