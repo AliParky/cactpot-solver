@@ -77,7 +77,7 @@ def solve(board):
             if j is None:
                 return f"Reveal next: r{row}, c{col}"
 
-    if known_count == 4:
+    if known_count >= 4:
         best_line = None
         best_payout = -1
         for idx, line in enumerate(LINES):
