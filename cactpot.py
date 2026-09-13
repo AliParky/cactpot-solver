@@ -89,7 +89,7 @@ def solve(board):
                 best_line = idx
                 best_payout = payout
         if best_line is None:
-            return
+            return "No complete line found"
         return best_line
         
     return
