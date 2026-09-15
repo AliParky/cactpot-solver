@@ -20,16 +20,16 @@ payout_by_sum = {
     24: 3600
 }
 
-LINES = [
-    (0, 1, 2),
-    (3, 4, 5),
-    (6, 7, 8),
-    (0, 3, 6),
-    (1, 4, 7),
-    (2, 5, 8),
-    (0, 4, 8),
-    (2, 4, 6)
-]
+LINES = {
+    0: (0, 1, 2),
+    1: (3, 4, 5),
+    2: (6, 7, 8),
+    3: (0, 3, 6),
+    4: (1, 4, 7),
+    5: (2, 5, 8),
+    6: (0, 4, 8),
+    7: (2, 4, 6)
+}
 
 def parse_board():
     raw = input("Enter 9 cells (use . for unknown), e.g. '1 . . 4 . . . . .':")
@@ -91,7 +91,6 @@ def solve(board):
         if best_line is None:
             return "Cannot solve: No complete line found"
         return best_line
-        
     return
 
 def main():
