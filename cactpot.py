@@ -58,7 +58,19 @@ def line_expected_value():
     return
 
 def pick_guaranteed_line():
-    return
+    best_line = None
+    best_payout = -1
+    for idx, line in LINES.items():
+        values = [board[i] for i in line]
+        if None in values:
+            continue
+        payout = payout_by_sum.get(sum(values), 0)
+        if payout > best_payout:
+            best_line = idx
+            best_payout = payout
+    if best_line is None:
+        return "Cannot solve: No complete line found"
+    return best_line
 
 def solve(board):
     if board is None:
