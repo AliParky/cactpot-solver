@@ -57,7 +57,7 @@ def parse_board():
 def line_expected_value():
     return
 
-def pick_guaranteed_line():
+def pick_guaranteed_line(board):
     best_line = None
     best_payout = -1
     for idx, line in LINES.items():
