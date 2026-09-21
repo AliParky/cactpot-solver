@@ -91,21 +91,6 @@ def solve(board):
             col = i % 3 + 1
             if j is None:
                 return f"Reveal next: r{row}, c{col}"
-
-    if known_count >= 4:
-        best_line = None
-        best_payout = -1
-        for idx, line in LINES.items():
-            values = [board[i] for i in line]
-            if None in values:
-                continue
-            payout = payout_by_sum.get(sum(values), 0)
-            if payout > best_payout:
-                best_line = idx
-                best_payout = payout
-        if best_line is None:
-            return "Cannot solve: No complete line found"
-        return best_line
     return
 
 def main():
