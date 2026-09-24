@@ -55,6 +55,7 @@ def parse_board():
     return board
 
 def line_expected_value(line_name):
+    line = LINES[line_name]
     return
 
 def pick_guaranteed_line(board):
