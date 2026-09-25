@@ -54,7 +54,7 @@ def parse_board():
         board.append(value)
     return board
 
-def line_expected_value(line_name):
+def line_expected_value(board, line_name):
     line = LINES[line_name]
     return
 
