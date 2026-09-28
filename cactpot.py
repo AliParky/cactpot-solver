@@ -57,7 +57,8 @@ def parse_board():
 def line_expected_value(board, line_name):
     line = LINES[line_name]
     values = [board[i] for i in line]
-    return payout_by_sum.get(sum(values), 0)
+    if all(value is not None for value in values):
+        return payout_by_sum.get(sum(values), 0)
 
 def pick_guaranteed_line(board):
     best_line = None
