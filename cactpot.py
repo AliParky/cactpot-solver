@@ -59,6 +59,7 @@ def line_expected_value(board, line_name):
     values = [board[i] for i in line]
     if all(value is not None for value in values):
         return payout_by_sum.get(sum(values), 0)
+    unknown_positions = [idx for idx, value in enumerate(values) if value is None]
     total_payout = 0
 
 def pick_guaranteed_line(board):
