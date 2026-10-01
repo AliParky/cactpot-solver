@@ -1,3 +1,5 @@
+import itertools
+
 payout_by_sum = {
     6: 10000,
     7: 36,
