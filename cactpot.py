@@ -64,6 +64,9 @@ def line_expected_value(board, line_name):
     unknown_positions = [idx for idx, value in enumerate(values) if value is None]
     total_payout = 0
 
+    for combo in itertools.product(range(1, 10), repeat=len(unknown_positions)):
+        print(combo)
+
 def pick_guaranteed_line(board):
     best_line = None
     best_payout = -1
