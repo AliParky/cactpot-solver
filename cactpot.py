@@ -65,6 +65,7 @@ def line_expected_value(board, line_name):
     total_payout = 0
 
     for combo in itertools.product(range(1, 10), repeat=len(unknown_positions)):
+        filled = values
         print(combo)
 
 def pick_guaranteed_line(board):
