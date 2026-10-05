@@ -66,6 +66,8 @@ def line_expected_value(board, line_name):
 
     for combo in itertools.product(range(1, 10), repeat=len(unknown_positions)):
         filled = values
+        for pos, value in zip(unknown_positions, combo):
+            filled[pos] = value
         total_payout += payout_by_sum.get(sum(filled), 0)
         print(combo)
 
