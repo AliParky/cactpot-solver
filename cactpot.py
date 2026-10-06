@@ -105,7 +105,8 @@ def solve(board):
             col = i % 3 + 1
             if j is None:
                 return f"Reveal next: r{row}, c{col}"
-    return pick_guaranteed_line(board)
+    if known_count >= 4:
+        return pick_guaranteed_line(board)
 
 def main():
     board = parse_board()
