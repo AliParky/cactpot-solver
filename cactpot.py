@@ -72,6 +72,7 @@ def line_expected_value(board, line_name):
         print(combo)
 
 def pick_best_line():
+    best_line = None
     return
 
 def pick_guaranteed_line(board):
