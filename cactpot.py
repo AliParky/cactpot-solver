@@ -73,6 +73,7 @@ def line_expected_value(board, line_name):
 
 def pick_best_line():
     best_line = None
+    best_payout = -1
     return
 
 def pick_guaranteed_line(board):
