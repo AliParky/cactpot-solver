@@ -71,7 +71,7 @@ def line_expected_value(board, line_name):
         total_payout += payout_by_sum.get(sum(filled), 0)
         print(combo)
 
-def pick_best_line():
+def pick_best_line(board):
     best_line = None
     best_payout = -1
     for line_name in LINES:
