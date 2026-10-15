@@ -77,6 +77,7 @@ def pick_best_line(board):
     for line_name in LINES:
         expected_payout = line_expected_value(board, line_name)
         if expected_payout > best_payout:
+            best_line = line_name
             best_payout = expected_payout
             print(expected_payout)
         print(line_name)
