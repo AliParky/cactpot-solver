@@ -118,7 +118,7 @@ def solve(board):
             if j is None:
                 return f"Reveal next: r{row}, c{col}"
     if known_count >= 4:
-        return pick_guaranteed_line(board)
+        return
 
 def main():
     board = parse_board()
