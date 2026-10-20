@@ -72,6 +72,7 @@ def line_expected_value(board, line_name):
         print(combo)
 
 def pick_best_scratch():
+    best_cell = None
     return
 
 def pick_best_line(board):
