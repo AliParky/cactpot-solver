@@ -123,7 +123,7 @@ def solve(board):
             if j is None:
                 return f"Reveal next: r{row}, c{col}"
     if known_count >= 4:
-        return
+        return pick_best_line(board)
 
 def main():
     board = parse_board()
