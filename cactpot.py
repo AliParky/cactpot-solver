@@ -74,6 +74,7 @@ def line_expected_value(board, line_name):
 def pick_best_scratch(board):
     best_cell = None
     best_value = -1
+    remaining_numbers = 0
     for cell in board:
         print(cell)
     return
