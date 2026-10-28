@@ -75,6 +75,9 @@ def pick_best_scratch(board):
     best_cell = None
     best_value = -1
     remaining_numbers = 0
+    for i in range(10):
+        if i not in board:
+            remaining_numbers += 1
     for cell in board:
         if cell is not None:
             continue
