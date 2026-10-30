@@ -81,6 +81,8 @@ def pick_best_scratch(board):
     for cell in board:
         if cell is not None:
             continue
+        for number in remaining_numbers:
+            print(number)
         print(cell)
     return
 
