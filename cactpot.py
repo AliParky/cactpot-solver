@@ -74,15 +74,15 @@ def line_expected_value(board, line_name):
 def pick_best_scratch(board):
     best_cell = None
     best_value = -1
-    remaining_numbers = []
+    remaining = []
     for i in range(10):
         if i not in board:
-            remaining_numbers.append(i)
+            remaining.append(i)
     for cell in board:
         if cell is not None:
             continue
         total = 0
-        for number in remaining_numbers:
+        for number in remaining:
             print(number)
         print(cell)
     return
