@@ -83,6 +83,7 @@ def pick_best_scratch(board):
             continue
         total = 0
         for number in remaining:
+            trial = board[:]
             print(number)
         print(cell)
     return
