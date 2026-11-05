@@ -84,6 +84,7 @@ def pick_best_scratch(board):
         total = 0
         for number in remaining:
             trial = board[:]
+            trial[idx] = number
             print(number)
         print(cell)
     return
