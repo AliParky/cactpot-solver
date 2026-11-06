@@ -71,6 +71,9 @@ def line_expected_value(board, line_name):
         total_payout += payout_by_sum.get(sum(filled), 0)
         print(combo)
 
+def best_line_value(board):
+    return
+
 def pick_best_scratch(board):
     best_cell = None
     best_value = -1
