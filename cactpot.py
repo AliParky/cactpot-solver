@@ -76,6 +76,8 @@ def best_line_value(board):
     for line_name in LINES:
         print(line_name)
         print(line_expected_value(board, line_name))
+        if line_expected_value(board, line_name) > best_value:
+            best_value = line_expected_value(board, line_name)
     return
 
 def pick_best_scratch(board):
