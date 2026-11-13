@@ -96,6 +96,7 @@ def pick_best_scratch(board):
             trial[idx] = number
             total += best_line_value(trial)
             print(number)
+        value = total / len(remaining)
         print(cell)
     return
 
