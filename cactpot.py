@@ -98,6 +98,7 @@ def pick_best_scratch(board):
             print(number)
         value = total / len(remaining)
         if value > best_value:
+            best_cell = idx
             best_value = value
             print(value)
         print(cell)
