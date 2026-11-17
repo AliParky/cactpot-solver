@@ -84,7 +84,7 @@ def pick_best_scratch(board):
     best_cell = None
     best_value = -1
     remaining = []
-    for i in range(10):
+    for i in range(1, 10):
         if i not in board:
             remaining.append(i)
     for idx, cell in enumerate(board):
