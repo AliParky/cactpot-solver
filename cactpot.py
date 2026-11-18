@@ -102,7 +102,7 @@ def pick_best_scratch(board):
             best_value = value
             print(value)
         print(cell)
-    return
+    return best_cell
 
 def pick_best_line(board):
     best_line = None
