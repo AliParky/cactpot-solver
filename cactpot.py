@@ -63,6 +63,7 @@ def line_expected_value(board, line_name):
         return payout_by_sum.get(sum(values), 0)
     unknown_positions = [idx for idx, value in enumerate(values) if value is None]
     total_payout = 0
+    combinations = 0
 
     for combo in itertools.product(range(1, 10), repeat=len(unknown_positions)):
         filled = values[:]
