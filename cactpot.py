@@ -70,6 +70,7 @@ def line_expected_value(board, line_name):
         for pos, value in zip(unknown_positions, combo):
             filled[pos] = value
         total_payout += payout_by_sum.get(sum(filled), 0)
+        combinations += 1
         print(combo)
 
 def best_line_value(board):
