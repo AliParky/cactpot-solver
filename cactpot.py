@@ -72,6 +72,7 @@ def line_expected_value(board, line_name):
         total_payout += payout_by_sum.get(sum(filled), 0)
         combinations += 1
         print(combo)
+    return total_payout / combinations
 
 def best_line_value(board):
     best_value = 0
