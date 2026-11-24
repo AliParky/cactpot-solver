@@ -79,7 +79,8 @@ def best_line_value(board):
     for line_name in LINES:
         print(line_name)
         print(line_expected_value(board, line_name))
-        if line_expected_value(board, line_name) > best_value:
+        expected_value = line_expected_value(board, line_name)
+        if expected_value > best_value:
             best_value = line_expected_value(board, line_name)
     return best_value
 
