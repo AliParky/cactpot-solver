@@ -137,10 +137,7 @@ def solve(board):
     if len(board) != 9:
         return "Cannot solve: Board must have 9 cells"
 
-    known_count = 0
-    for i in board:
-        if i is not None:
-            known_count += 1
+    known_count = sum(1 for i in board if i is not None)
 
     if known_count < 4:
         for i, j in enumerate(board):
